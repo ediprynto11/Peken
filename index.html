@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>Peken</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <img src="gambar/Logo.png"> 
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#Home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Produk" class="nav-link">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Tentang Kami" class="nav-link">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Kontak" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    }
+</script>
+
+<section id="Home" class="home">
+    <div class="image">
+        <img src="gambar/Ayam.png">
+    </div>
+    <div class="content">
+        <h1 class="title">Cari bahan pokok<br>bekualitas ???<br><span>Ke peken ajaa</span></h1>
+        <p><i class="fa fa-check text-primary me-3"></i>Fresh</p>
+        <p><i class="fa fa-check text-primary me-3"></i>Harga terjangkau</p>   
+        <p><i class="fa fa-check text-primary me-3"></i>Dari Petani & Peternak lokal terbaik</p>
+    </div>
+</section>
+
+<div id="Produk" class="container-menu">
+    <div class="Judul">
+        <hr class="garis-1">
+        <hr class="garis-2">
+        <h1 class="txt-menu">Produk</h1>
+    </div>
+    <div class="grid-container">
+        <article>
+            <img src="gambar/Ayam.png" width="300px" height="200px">
+            <div class="Text">
+                <h2>Daging Ayam</h2>
+                <p>Rp. 35.000/kg</p>
+            </div>
+        </article>  
+        <article>
+            <img src="gambar/Daging.jpeg" width="300px" height="200px">
+            <div class="Text">
+                <h2>Daging Sapi</h2>
+                <p>Rp. 120.000/kg</p>
+            </div>
+        </article>  
+        <article>
+            <img src="gambar/Tempe.jpeg" width="300px" height="200px">
+            <div class="Text">
+                <h2>Tempe</h2>
+                <p>Rp. 10.000/pcs</p>
+            </div>
+        </article>   
+        <article>
+            <img src="gambar/Brokoli.jpeg" width="300px" height="200px">
+            <div class="Text">
+                <h2>Brokoli</h2>
+                <p>Rp. 25.000/kg</p>
+            </div>
+        </article>  
+        <article>
+            <img src="gambar/Bayam.jpeg" width="300px" height="200px">
+            <div class="Text">
+                <h2>Bayam</h2>
+                <p>Rp. 8.000/iket</p>
+            </div>
+        </article>  
+        <article>
+            <img src="gambar/wortel.jpeg" width="300px" height="200px"> 
+            <div class="Text">
+                <h2>Wortel</h2>
+                <p>Rp. 30.000/kg</p>
+            </div>
+        </article>  
+        <!-- <a href="#Kontak"><input class="btn-pesan" type="button" value="Pesan" style="font-size: 18px;"></a> -->
+    </div> 
+</div>
+
+<div id="Tentang Kami" class="container-tentang-kami">
+    <div class="Judul">
+        <hr class="garis-1">
+        <hr class="garis-2">
+        <h1 class="txt-menu">Tentang Kami</h1>
+    </div>
+    <p class="description1">Peken didirikan pada tahun 2015 oleh seorang pengusaha muda yang memiliki visi untuk menyediakan kebutuhan dapur
+        berkualitas tinggi dengan harga terjangkau. Perusahaan ini berawal dari sebuah pasar kecil di Kendal, di mana pendirinya
+        menjual ayam, daging, dan sayuran segar langsung dari petani lokal dan peternak. </p>
+    <section class="tentang-kami">
+        <div class="image">
+            <img src="gambar/org_belanja.jpg">
+        </div>
+        <div class="content">
+            <p class="description2">Melihat respon positif dari pelanggan, Peken mulai<br>
+                                    memperluas jangkauan produknya dan membuka<br>
+                                    cabang -cabang baru di berbagai kota besar di<br>
+                                    Indonesia. Pada tahun 2018, Peken telah memiliki<br>
+                                    10 cabang di seluruh Pulau Jawa dan Bali.<br>
+                                    Perusahaan ini terus berinovasi dengan<br>
+                                    memperkenalkan sistem pemesanan online yang <br>
+                                    memudahkan pelanggan untuk membeli produk <br>
+                                    tanpa harus datang ke pasar.</p>
+        </div>
+    </section>
+    <p class="description3">Peken terus berupaya untuk menjadi pemimpin dalam industri
+        ritel kebutuhan dapur dengan fokus pada kualitas, inovasi,
+        dan tanggung jawab sosial. Perusahaan ini percaya bahwa
+        dengan memberikan produk terbaik dan layanan yang prima,
+        maka dapat membantu meningkatkan kualitas hidup masyarakat. </p>
+</div>
+<div id="Kontak" class="container-kontak">
+    <div class="Judul">
+        <hr class="garis-1">
+        <hr class="garis-2">
+        <h1 class="txt-menu">Kontak</h1>
+    </div>
+   
+        <div class="kontak">
+            <div class="form">
+                <form action="send.php" method="post" target="_blank">
+                  <div class="user-box">
+                    <input type="text" name="name" required="">
+                    <label for="name">Nama</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="tel" name="telepon" required="">
+                    <label for="telepon">Nomor Telephone</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="alamat" required="">
+                    <label for="alamat">Alamat</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="keterangan" required="">
+                    <label for="keterangan">Keterangan</label>
+                  </div>
+                  <input type="hidden" name="noWa" value="6285742206197">
+                  <!-- <a href="#"><input class="btn-kirim" type="button" value="Kirim" style="font-size: 12px;"></a> -->
+                  <button class="btn-kirim" type="submit" name="submit" style="font-size: 12px;">Kirim</button>
+                </form>
+            </div> 
+            <div class="alamat">
+                <h4>Alamat</h4>
+                <p>Jl. Srogo Plantaran<br>Kaliwungu Selatan - Kendal</p><br>
+                <h4>Buka</h4>   
+                <p>Setiap hari<br>05.00 - 22.00 WIB</p>
+            </div>   
+    </div>
+</div>        
+<div class="Footer">
+    <h2>Copyright © 2024  EDI GROUP </h2>
+</div>
+</body>
+</html>
